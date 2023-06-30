@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+$primary_clr: #273a89;
+
+$secondary_clr: #fff;
+
+$third_clr: #6c4dc2;
+
+$btn_color: #e7a652;
+
+$green_clr: #55b084;
+
+
+.primary_bgclr{
+    background-color: $primary_clr;
+}
+.secondary_bgclr{
+    background-color: $secondary_clr;
+}
+.third_bgclr{
+    background-color: $third_clr;
+}
+.green_bgclr{
+    background-color: $green_clr;
+}
+.btn_bgcolor{
+    background-color: $btn_color;
+}
