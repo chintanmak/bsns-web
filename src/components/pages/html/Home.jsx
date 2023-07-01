@@ -1,7 +1,7 @@
 import React from 'react';
 import "../css/_home.scss";
 import satisfiedcustomer from '../../assets/icons/satisfied-customer.png';
-import headerimg from '../../assets/images/personwithlaptop.jpeg';
+import headerimg from '../../assets/images/personwithlaptop1.jpg';
 import facebook from '../../assets/icons/facebook.png';
 import twitter from '../../assets/icons/twitter.png';
 import instagram from '../../assets/icons/instagram.png';
@@ -14,6 +14,12 @@ import chart from '../../assets/icons/chart.png';
 import list from '../../assets/icons/list.png';
 import net from '../../assets/icons/net.png';
 import paint from '../../assets/icons/paint.png';
+import product1 from '../../assets/images/product1.jpg';
+import tick from '../../assets/icons/tick.png';
+import analysis from '../../assets/icons/analysis.png';
+import notepad from '../../assets/icons/notepad.png';
+import pen from '../../assets/icons/pen.png';
+import graph from '../../assets/icons/graph.png';
 
 export default function Home() {
   return (
@@ -93,6 +99,63 @@ export default function Home() {
     <div className='phara_container'>
       <h2>A Shining crescent far beneath the flying vessel. Mist enveloped the ship three hours out from port.</h2>
       <img src={net} />
+    </div>
+
+    <div className='product_container'>
+      <div className='product_img'>
+      <img src={product1} />
+      </div>
+
+      <div className='product_details'>
+        <p className='btn_color'>Services</p>
+        <h1>Connect to Customers</h1>
+        <div>
+        <div className='lists_services'>
+          <img src={tick} />
+          <p>Engine optimization</p>
+        </div>
+        <div className='lists_services'>
+          <img src={tick} />
+          <p>Social media strategy</p>
+        </div>
+        <div className='lists_services'>
+          <img src={tick} />
+          <p>Real time and data</p>
+        </div>
+        <div className='lists_services'>
+          <img src={tick} />
+          <p>Online media management</p>
+        </div>
+        </div>
+        <button className=' btn_about btn_bgcolor'>About</button>
+
+      </div>
+    </div>
+
+    <div className='counter_container'>
+      <div className='countsection'>
+        <img src={analysis} />
+        <h1>42%</h1>
+        <p>Analysis</p>
+      </div>
+
+      <div className='countsection'>
+        <img src={notepad} />
+        <h1>73+</h1>
+        <p>Advices</p>
+      </div>
+
+      <div className='countsection'>
+        <img src={pen} />
+        <h1>987</h1>
+        <p>Solutions</p>
+      </div>
+
+      <div className='countsection'>
+        <img src={graph} />
+        <h1>4k</h1>
+        <p>Strategies</p>
+      </div>
     </div>
     </>
   )
