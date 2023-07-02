@@ -20,6 +20,10 @@ import analysis from '../../assets/icons/analysis.png';
 import notepad from '../../assets/icons/notepad.png';
 import pen from '../../assets/icons/pen.png';
 import graph from '../../assets/icons/graph.png';
+import hometech from '../../assets/images/homeTech.jpeg';
+import code from '../../assets/images/code.jpg';
+import suit from '../../assets/images/suit.jpg';
+
 
 export default function Home() {
   return (
@@ -156,6 +160,28 @@ export default function Home() {
         <h1>4k</h1>
         <p>Strategies</p>
       </div>
+    </div>
+
+    <div className='cases_container'>
+      <p className='btn_color'>Our Cases</p>
+      <h1>Some of Our Recent Business Cases</h1>
+      <p className='textp'>I watched the storm, so beautiful yet terrific.</p>
+    <div className='cases_boxsection'>
+      <div className='case_section'>
+        <img src={hometech} />
+        <p>Home of Technology</p>
+      </div>
+
+      <div className='case_section'>
+        <img src={code} />
+        <p>Home of Technology</p>
+      </div>
+
+      <div className='case_section'>
+        <img src={suit} />
+        <p>Home of Technology</p>
+      </div>
+    </div>
     </div>
     </>
   )
