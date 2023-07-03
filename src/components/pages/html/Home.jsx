@@ -23,7 +23,12 @@ import graph from '../../assets/icons/graph.png';
 import hometech from '../../assets/images/homeTech.jpeg';
 import code from '../../assets/images/code.jpg';
 import suit from '../../assets/images/suit.jpg';
-
+import managerquote from '../../assets/images/managerqoute.jpg';
+import atlassian from '../../assets/images/atlassian_logo.png';
+import slack from '../../assets/images/slack_logo.png';
+import dropbox from '../../assets/images/dropbox_logo.png';
+import shopify from '../../assets/images/shopify_logo.png';
+import google from '../../assets/images/google_logo.png';
 
 export default function Home() {
   return (
@@ -182,6 +187,33 @@ export default function Home() {
         <p>Home of Technology</p>
       </div>
     </div>
+      <button className='btn_bgcolor'>ALL WORK</button>
+    </div>
+
+    <div className='managerqoute_container'>
+      <div className='quote_section'>
+          <h2>The face of the moon was in shadow. The recorded voice scratched in the speaker. The sky was cloudless and of a deep dark blue.</h2>
+          <br />
+          <h4><b>Karl Kalagin</b></h4>
+          <p>PR Manager</p>
+      </div>
+      
+        <img src={managerquote} />
+
+    </div>
+
+    <div className='client_container'>
+      <p className='btn_color'>Our Clients</p>
+      <h1>The face of the moon was in shadow voice scratched in the speaker.</h1>
+      <div className='client_logo'>
+        <img src={atlassian} />
+        <img src={slack} />
+        <img src={dropbox} />
+        <img src={shopify} />
+        <img src={google} />
+
+    </div>
+      <button className='btn_bgcolor'>HOW WE WORK</button>
     </div>
     </>
   )
