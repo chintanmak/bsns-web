@@ -215,6 +215,28 @@ export default function Home() {
     </div>
       <button className='btn_bgcolor'>HOW WE WORK</button>
     </div>
+
+    <div className='footer_container'>
+      <div className='footer_titles'>
+        <h1>BSNS</h1>
+        <p>Mist enveloped the ship three hours our from port.</p>
+      </div>
+
+      <div className='footer_menu'>
+        <h3>MENU</h3>
+        <p></p>
+        <p>About</p>
+        <p>Cases</p>
+        
+        <p>Blog</p>
+        <p>Contact</p>
+      </div>
+      
+      <div className='subscribe_section'>
+        <h3>Subscribe</h3>
+        <input type='text' placeholder='Your Email' />
+      </div>
+    </div>
     </>
   )
 }
