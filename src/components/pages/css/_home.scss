@@ -1,10 +1,506 @@
 @import "../../scss/main-scss";
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
-  
+    .header_container{
+        width: 100%;
+        // height: 79vh;
+        display: flex;
+        flex-direction: column;
+        // justify-content: space-evenly;
+        background-color: $primary_clr;
+        & .header_titles{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1.5rem;
+            width: 100%;
+            padding-left: 2rem;
+
+            & .satisfiedCustomerSection{
+                margin-top: 1rem;
+                width: 60%;
+                height: 3rem;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                border: 2px solid $third_clr;
+                background-color: $third_clr;
+                padding: 0 1rem;
+                border-radius: 5rem;
+                & img{
+                    width: 2rem;
+                    border: 2px solid $secondary_clr;
+                    border-radius: 5rem;
+                    padding: 0.2rem;
+                }
+                & p{
+                    padding-left: 1rem;
+                    font-size: 1.2rem;
+                    font-weight: 400;
+
+                    color: $secondary_clr;
+                }
+            }
+
+            & h1{
+                width: 60%;
+                // margin-top: -1rem;
+                font-size: 3rem;
+                color: $secondary_clr;
+            }
+
+            & p{
+                font-size: 1rem;
+                width: 70%;
+                color: $secondary_clr;
+            }
+            & button{
+                margin-top: 2rem;
+                background-color: $btn_color;
+                border: none;
+                width: 35%;
+                height: 3rem;
+                border-radius: 1rem;
+                color: $secondary_clr;
+                font-size: 1rem;
+            }
+        }
+        & .header_image{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 3rem 0;
+            & img{
+                width: 80%;
+                border-radius: 2rem;
+            }
+        }
+    }
+
+    .socialMedia{
+        margin-top: -3rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 5rem;
+        gap: 1.5rem;
+        background-color: $primary_clr;
+        & img{
+            width: 1.7rem;
+            border-radius: 5rem;
+            padding: 0.7rem;
+            background-color: $third_clr;
+        }
+        
+    }
+
+    .planning_container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: -4rem;
+        & .plan_box{
+            margin-top: 5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 2rem;
+            width: 80%;
+            height: 15rem;
+            border: 2px solid;
+            border-radius: 0.5rem;
+            gap: 1.5rem;
+            & img{
+                width: 1.5rem;
+                border-radius: 5rem;
+                padding: 1rem;
+            }
+            & .icon-1{
+                background-color: $third_clr; 
+            }
+            & .icon-2{
+                background-color: $green_clr; 
+            }
+            & .icon-3{
+                background-color: $primary_clr; 
+            }
+            & .plan_titles{
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+                & h2{
+                    font-size: 2rem;
+                    font-weight: 700;
+                }
+                & p{
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+
+    .grow_text{
+        margin: 3rem 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        & h1{
+            width: 80%;
+            font-size: 2rem;
+        }
+    }
+
+    .services_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 2rem;
+
+        & .service_fullbox{
+           height: 16rem;
+           width: 80%;
+           border-radius: 0.5rem;
+           & .mainicon{
+               position: absolute;
+               padding-left: 8rem;
+               padding-top: 5rem;
+               width: 10rem;
+           }
+           & .designing_boxicon{
+               padding: 2rem;
+               width: 5rem;
+           }
+           & p{
+               border-radius: 0.5rem;
+               width: 45%;
+               text-align: center;
+               padding: 0.5rem;
+               font-size: 1.5rem;
+               font-weight: 700;
+               color: $secondary_clr;
+
+           }
+        }
+   }
+
+   .phara_container{
+    margin-top: 2rem;
+    width: 100%;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    background-color: $primary_clr;
+    padding: 4rem 0;
+    & h2{
+        width: 80%;
+        font-size: 2rem;
+        text-align: left;
+        color: $secondary_clr;
+    }
+    & img{
+        width: 40%;
+    }
+    }
+
+    .product_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        & .product_img{
+            margin-top: 3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+             & img{
+                width: 80%;
+            }
+        } 
+
+        & .product_details{
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            & p{
+                font-size: 1.5rem;
+            }
+            & h1{
+                font-size: 3.5rem;
+            }
+            & .lists_services{
+                margin-top: 2rem;
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                & img{
+                    width: 2rem;
+                    background-color: $primary_clr;
+                    border-radius: 1.5rem;
+                    padding: 0.2rem;
+                }
+                & p{
+                    font-size: 1.3rem;
+                }
+            }
+            & .btn_about{
+                margin-top: 2rem;
+                width: 10rem;
+                height: 3rem;
+                border: none;
+                border-radius: 0.5rem;
+                font-size: 1.3rem;
+                color: $secondary_clr;
+            }
+        }
+    }
+
+    .counter_container{
+        margin: 3rem 0;
+        padding: 3rem 0;
+        width: 100%;
+        background-color: $primary_clr;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        & .countsection{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            & img{
+                width: 2rem;
+                background-color: $third_clr;
+                padding: 1rem;
+                border-radius: 5rem;
+            
+            }
+            & h1{
+                font-size: 3rem;
+                font-weight: 700;
+                color: $secondary_clr;
+            }
+            & p{
+                font-size: 1.5rem;
+                color: $secondary_clr;
+            }
+        }
+    }
+
+    .cases_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        width: 100%;
+
+        & p{
+            font-size: 1.5rem;
+        }
+        & .textp{
+            font-size: 1.2rem;
+            font-weight: 300;
+            width: 90%;
+        }
+        & h1{
+            width: 90%;
+            font-size: 3rem;
+            text-align: center;
+        }
+
+        & .cases_boxsection{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+            width: 100%;
+
+            & .case_section{
+                width: 90%;
+                background-color: $primary_clr;
+                border-radius: 1rem;
+                & img{
+                    width: 100%;
+                    height: 15rem;
+                    border-radius: 1rem;  
+                    opacity: 0.5;                
+                }
+                & p{
+                    position: absolute;
+                    padding-left: 1rem;
+                    color: $secondary_clr;
+                    margin-top: -3rem;
+                    font-size: 1.7rem;
+                }
+            }
+        }
+
+        & button{
+            width: 10rem;
+            height: 3rem;
+            border: none;
+            border-radius: 0.5rem;
+            font-size: 1.3rem;
+            color: $secondary_clr;
+        }
+    }
+
+    .managerqoute_container{
+        margin: 4rem 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // gap: 4rem;
+
+        & .quote_section{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            & h2{
+                width: 80%;
+                font-size: 1.5rem;
+            }
+            & h4{
+                font-size: 1.7rem;
+            }
+            & p{
+                font-size: 1.2rem;
+            }
+        }
+
+        & img{
+            width: 80%;
+        }
+    }
+
+    .client_container{
+        margin: 3rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        width: 100%;
+
+        & p{
+            font-size: 1.5rem;
+        }
+       
+        & h1{
+            font-size: 2.5rem;
+            width: 80%;
+            text-align: center;
+        }
+
+        & .client_logo{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            margin-top: 3rem;
+                & img{
+                    width: 12rem;                
+                }
+        }
+
+        & button{
+            // margin-top: 4rem;
+            width: 15rem;
+            height: 3rem;
+            border: none;
+            border-radius: 0.5rem;
+            font-size: 1.3rem;
+            color: $secondary_clr;
+        }
+    }
+
+    .footer_container{
+        background-color: #333333;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+
+        & .footer_titles{
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            // justify-content: center;
+            width: 80%;
+            color: $secondary_clr;
+            gap: 2rem;
+
+            & h1{
+                font-size: 3rem;
+            }
+            & p{
+                font-size: 1.2rem;
+            }
+        }
+
+        & .footer_menu{
+            width: 80%;
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 2rem;
+            & h3{
+                color: $btn_color;
+                font-size: 1.5rem;
+            }
+            & p{
+                color: $secondary_clr;
+                font-size: 1.2rem;
+            }
+        }
+
+        & .subscribe_section{
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            margin-bottom: 4rem;
+
+            & h3{
+                color: $btn_color;
+                font-size: 1.8rem;
+            }
+            & input{
+                width: 13rem;
+                height: 2rem;
+                border-radius: 0.5rem;
+                padding-left: 1rem;
+                font-size: 1rem;
+            }
+        }
+    }
 }
 
-// @media screen and (min-width: 769px){
+@media screen and (min-width: 769px){
     .header_container{
         width: 100%;
         height: 79vh;
@@ -488,4 +984,4 @@
             }
         }
     }
-// }
+}
